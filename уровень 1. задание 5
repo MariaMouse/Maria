@@ -1,0 +1,26 @@
+//  1
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+class Main {
+    public static void main(String[] args) {
+        String[] words={"theme", "tree", "world", "hello", "again", "world", "maybe", "undertale", "later", "theme"};
+
+        Map<String, Integer> wordMap=new HashMap<>();
+        Set<String> uniqueWords=new HashSet<>();
+
+        for (String word : words) {
+            uniqueWords.add(word);
+            if (wordMap.containsKey(word)) {
+                wordMap.put(word, wordMap.get(word) + 1);
+            } else {
+                wordMap.put(word, 1);
+            }
+        }
+
+        System.out.print("Unique Words: " + wordMap);
+    }
+}
