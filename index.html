@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="s.css">
-    <title>Stylish profile card</title>
-</head>
-<body>
-    <div class="profile-container">
-        <div class="img-container">
-            <!--img src="./images/Лeonardo_DiCaprio_057483_.jpg" alt="profile image"-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipping Card UI Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="card front-face">
+          <header>
+            <span class="logo">
+              <h5>Master Card</h5>
+            </span>
+          </header>
+          <div class="card-details">
+            <div class="name-number">
+              <h6>Card Number</h6>
+              <h5 class="number">8050 2030 3020 5040</h5>
+              <h5 class="name">Maria Kukushkina</h5>
+            </div>
+            <div class="valid-date">
+              <h6>Valid Thru</h6>
+              <h5>05/28</h5>
+            </div>
+          </div>
         </div>
-        <p class="info full-name">Dicaprio McHovanski</p>
-        <p class="info role">
-            <i class="fas fa-star"></i>
-            UX/UI Developer
-        </p>
-        <p class="info place">
-        <i class="fas fa-map-marker-alt"></i>
-        Milan, Italy
-        </p>
-        <div class="posts-info">
-            <p><span>336</span> Posts</p>
-            <p><span>12313</span> Likes</p>
-            <p><span>12</span> Works</p>
+        <div class="card back-face">
+          <h6>
+            For customer service call +977 4343 3433 or email at
+            mastercard@gmail.com
+          </h6>
+          <span class="magnetic-strip"></span>
+          <div class="signature"><i>005</i></div>
+          <h5>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+            maiores sed doloremque nesciunt neque beatae voluptatibus doloribus.
+            Libero et quis magni magnam nihil temporibus? Facere consectetur
+            dolore reiciendis et veniam.
+          </h5>
         </div>
-
-        <div class="social-container">
-            <button class="youtube">
-                <i class="fab fa-youtube"></i>
-            </button>
-            <button class="linkedin">
-                <i class="fab fa-linkedin-in"></i>
-            </button>
-            <button class="instagram">
-                <i class="fab fa-instagram"></i>
-            </button>
-            <button class="github">
-                <i class="fab fa-github"></i>
-            </button>
-        </div>
-
-        <button class="action">Follow</button>
-        <button class="action message">Message</button>
-    </div>
-    
-</body>
+      </div>
+    </section>
+  </body>
 </html>
